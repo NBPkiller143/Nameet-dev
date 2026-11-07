@@ -52,7 +52,7 @@ function card(p, i) {
               <a class="shot" href="/work/${p.slug}/" tabindex="-1" aria-hidden="true" data-slug="${p.slug}"${fullHeights[p.slug] ? ` data-full="/images/cases/${p.slug}-full-1200" data-full-h="${fullHeights[p.slug]}"` : ''}>
                 <span class="shot__bar"><i></i><i></i><i></i><span>${esc(p.shotDomain || p.domain)}</span></span>
                 <span class="shot__media">
-              ${picture(p.image || p.slug, [480, 960, 1440, 1920], '(min-width: 1360px) 700px, (min-width: 860px) 52vw, 90vw', `${p.name} screenshot`, { attrs: ' width="1440" height="900" data-shot' })}
+              ${picture(p.image || p.slug, [480, 960, 1440, 1920], '(min-width: 1360px) 700px, (min-width: 860px) 52vw, 90vw', p.slug === 'nature-unisex-salon' ? 'Nature Unisex Salon website homepage' : `${p.name} screenshot`, { attrs: ' width="1440" height="900" data-shot' })}
                 </span>
               </a>
             </article>`
@@ -254,7 +254,7 @@ ${nav}
       <div class="shot" data-cover-shot>
         <div class="shot__bar" aria-hidden="true"><i></i><i></i><i></i><span>${esc(p.shotDomain || p.domain)}</span></div>
         <div class="shot__media">
-          ${picture(p.image || p.slug, [960, 1440, 1920, 2560], '(min-width: 1320px) 1220px, 92vw', `${p.name} preview`, { lazy: false, attrs: ' width="1440" height="900" data-shot' })}
+          ${picture(p.image || p.slug, [960, 1440, 1920, 2560], '(min-width: 1320px) 1220px, 92vw', p.slug === 'nature-unisex-salon' ? 'Nature Unisex Salon website homepage' : `${p.name} preview`, { lazy: false, attrs: ' width="1440" height="900" data-shot' })}
         </div>
       </div>
     </section>
