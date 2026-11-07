@@ -1,5 +1,10 @@
 # Nameet Kumar Behera — Personal Portfolio
 
+[![Live Site](https://img.shields.io/badge/Live_Site-nameet.runs--on.dev-00f5d4?style=for-the-badge&logo=vercel&logoColor=black)](https://nameet.runs-on.dev)
+[![GitHub](https://img.shields.io/badge/GitHub-NBPkiller143%2FNameet--dev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NBPkiller143/Nameet-dev)
+
+> 🌐 **Live Website:** [https://nameet.runs-on.dev](https://nameet.runs-on.dev)
+
 A handcrafted, dark editorial personal portfolio website for **Nameet Kumar Behera**, a Class 12 student developer based in Bengaluru building websites, web games, and Python applications with HTML, CSS, JavaScript, and Python.
 
 Built with Vite, Three.js, GSAP, Lenis, and modern ES modules.
@@ -132,8 +137,8 @@ Placeholder images are generated into `public/images/` and `public/images/cases/
 
 ## 🚀 Deployment (Vercel)
 
-1. Push your repository to GitHub (`https://github.com/NBPkiller143/nameet-portfolio`).
-2. Import the project into [Vercel](https://vercel.com/):
+1. Push your repository to GitHub (`https://github.com/NBPkiller143/Nameet-dev`).
+2. Live at: [https://nameet.runs-on.dev](https://nameet.runs-on.dev) (connected via Vercel).
    - **Framework Preset**: `Vite`
    - **Root Directory**: `Portfolio Website`
    - **Build Command**: `npm run build`

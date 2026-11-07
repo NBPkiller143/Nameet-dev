@@ -4,6 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "author": "Nameet Kumar Behera",
+  "homepage": "https://nameet.runs-on.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NBPkiller143/Nameet-dev.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
