@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#070708" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="robots" content="noindex" />
+  <title>Page not found — Nameet Kumar Behera</title>
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script>
+    document.documentElement.classList.add('js');
+    addEventListener('pagereveal', function (e) {
+      if (!e.viewTransition) return;
+      document.documentElement.classList.add('vt-in');
+      var from = (window.navigation && navigation.activation && navigation.activation.from && navigation.activation.from.url) || '';
+      var slug = (from.match(/\/work\/([a-z0-9-]+)\/?$/) || [])[1];
+      var el = /^\/work\//.test(location.pathname)
+        ? document.querySelector('[data-cover-shot]')
+        : slug && document.querySelector('.shot[data-slug="' + slug + '"]');
+      if (!el) return;
+      var r = el.getBoundingClientRect();
+      if (r.bottom <= 0 || r.top >= innerHeight) return;
+      el.style.viewTransitionName = 'case-shot';
+      e.viewTransition.finished.finally(function () { el.style.viewTransitionName = ''; });
+    });
+    setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.add('no-motion'); }, 3000);
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <span class="nav__mark" aria-hidden="true">NB</span>
+        <span class="nav__name">Nameet Behera</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/#toolkit">Toolkit</a>
+        <a href="/#pricing">What I do</a>
+        <a href="/#note">About</a>
+        <a href="/#faq">FAQ</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="/#contact" class="btn btn--light btn--sm"><span>Get in touch</span><span class="btn__chip" aria-hidden="true">↗</span></a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span class="sr-only">Open menu</span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden data-menu>
+      <nav aria-label="Mobile">
+        <a href="/"><small>00</small> Home</a>
+        <a href="/#work"><small>01</small> The work</a>
+        <a href="/#process"><small>03</small> How I work</a>
+        <a href="/#toolkit"><small>04</small> Toolkit</a>
+        <a href="/#pricing"><small>05</small> What I do</a>
+        <a href="/#note"><small>06</small> About me</a>
+        <a href="/#faq"><small>07</small> Questions</a>
+        <a href="/#contact"><small>08</small> Contact</a>
+      </nav>
+      <p class="hud">nameetbehera6@gmail.com</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="notfound container" aria-labelledby="nf-title">
+      <p class="chapter__label hud"><span class="hud__bracket">[</span> 404 <span class="hud__bracket">]</span> Page not found</p>
+      <h1 class="notfound__title" id="nf-title">This page took a <em>wrong turn.</em></h1>
+      <p class="notfound__text">The link may be old or mistyped. Everything I’ve built is still one click away.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--light" href="/#work"><span>See the work</span><span class="btn__chip" aria-hidden="true">↗</span></a>
+        <a class="btn btn--line" href="/#contact"><span>Get in touch</span></a>
+      </div>
+      <ul class="notfound__links" aria-label="Case studies">
+        <li><a href="/work/shadow-trail/">Shadow Trail: The Clean Path</a></li>
+        <li><a href="/work/nature-unisex-salon/">Nature Unisex Salon</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" data-footer>
+      <div class="footer__top">
+        <p class="hud">[ End of story — for now ]</p>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="/#work">Work</a>
+          <a href="/#pricing">What I do</a>
+          <a href="/#contact">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <button type="button" class="footer__cookie" data-cookie-settings>Cookie settings</button>
+          <a href="https://github.com/NBPkiller143" target="_blank" rel="noopener">GitHub ↗<span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="https://wa.me/916360426243" target="_blank" rel="noopener">WhatsApp ↗<span class="sr-only"> (opens in a new tab)</span></a>
+        </nav>
+      </div>
+      <p class="footer__word" aria-hidden="true">Nameet Behera</p>
+      <div class="footer__bottom hud">
+        <span>© <span data-year>2026</span> Nameet Kumar Behera · Designed &amp; developed in Bengaluru</span>
+        <a href="/">Back to the homepage ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

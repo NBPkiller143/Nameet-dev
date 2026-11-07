@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#070708" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>Nameet Kumar Behera — Student Developer in Bengaluru | Web &amp; Python</title>
+  <meta name="description" content="Nameet Kumar Behera is a student developer in Bengaluru building websites, web games and Python projects with HTML, CSS, JavaScript and Python." />
+  <link rel="canonical" href="https://nameet.runs-on.dev/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nameet.runs-on.dev/" />
+  <meta property="og:site_name" content="Nameet Kumar Behera" />
+  <meta property="og:title" content="Nameet Kumar Behera — Student Developer in Bengaluru | Web &amp; Python" />
+  <meta property="og:description" content="Nameet Kumar Behera is a student developer in Bengaluru building websites, web games and Python projects with HTML, CSS, JavaScript and Python." />
+  <meta property="og:image" content="https://nameet.runs-on.dev/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Nameet Kumar Behera, student developer in Bengaluru" />
+  <meta property="og:locale" content="en_IN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nameet Kumar Behera — Student Developer in Bengaluru | Web &amp; Python" />
+  <meta name="twitter:description" content="Nameet Kumar Behera is a student developer in Bengaluru building websites, web games and Python projects with HTML, CSS, JavaScript and Python." />
+  <meta name="twitter:image" content="https://nameet.runs-on.dev/images/og-image.jpg" />
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script>
+    document.documentElement.classList.add('js');
+    // Page transitions, arriving side: name the screenshot that should morph in
+    addEventListener('pagereveal', function (e) {
+      if (!e.viewTransition) return;
+      document.documentElement.classList.add('vt-in');
+      var from = (window.navigation && navigation.activation && navigation.activation.from && navigation.activation.from.url) || '';
+      var slug = (from.match(/\/work\/([a-z0-9-]+)\/?$/) || [])[1];
+      var el = /^\/work\//.test(location.pathname)
+        ? document.querySelector('[data-cover-shot]')
+        : slug && document.querySelector('.shot[data-slug="' + slug + '"]');
+      if (!el) return;
+      var r = el.getBoundingClientRect();
+      if (r.bottom <= 0 || r.top >= innerHeight) return;
+      el.style.viewTransitionName = 'case-shot';
+      e.viewTransition.finished.finally(function () { el.style.viewTransitionName = ''; });
+    });
+    setTimeout(function () { if (!window.__motionReady) document.documentElement.classList.add('no-motion'); }, 3000);
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__mark" aria-hidden="true">NB</span>
+        <span class="nav__name">Nameet Behera</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#pricing">What I do</a>
+        <a href="#note">About</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--light btn--sm"><span>Get in touch</span><span class="btn__chip" aria-hidden="true">↗</span></a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span class="sr-only">Open menu</span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden data-menu>
+      <nav aria-label="Mobile">
+        <a href="#work"><small>01</small> The work</a>
+        <a href="#problem"><small>02</small> The problem</a>
+        <a href="#process"><small>03</small> How I work</a>
+        <a href="#toolkit"><small>04</small> Toolkit</a>
+        <a href="#pricing"><small>05</small> What I do</a>
+        <a href="#note"><small>06</small> About me</a>
+        <a href="#faq"><small>07</small> Questions</a>
+        <a href="#contact"><small>08</small> Contact</a>
+      </nav>
+      <p class="hud">nameetbehera6@gmail.com</p>
+    </div>
+  </header>
+
+  <!-- Story progress: which chapter you're in -->
+  <aside class="chapter-nav" aria-hidden="true" data-chapter-nav>
+    <span class="chapter-nav__num">CH <span data-chapter-num>00</span></span>
+    <span class="chapter-nav__bar"><span data-chapter-progress></span></span>
+    <span class="chapter-nav__title" data-chapter-title>Hello</span>
+  </aside>
+
+  <main id="main">
+
+    <!-- ============ 00 · HELLO ============ -->
+    <section class="hero" id="top" data-chapter="00" data-chapter-title="Hello" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__bar hero-in" style="--d:.05s">
+        <p class="hud"><span class="hud__bracket">[</span> Nameet Kumar Behera <span class="hud__bracket">]</span> Student developer · Bengaluru, IN</p>
+        <p class="hud hero__status"><span class="pulse" aria-hidden="true"></span> Open to internships &amp; collaborations · <time data-clock>--:--</time> IST</p>
+      </div>
+
+      <div class="container hero__head" data-parallax="-10">
+        <h1 class="hero__title" id="hero-title">
+          <span class="line"><span class="line__inner">Building things for the</span></span>
+          <span class="line"><span class="line__inner"><em>web and the real world.</em></span></span>
+        </h1>
+        <div class="hero__sub">
+          <p class="hero__lead hero-in hero-in--soft" style="--d:.35s">
+            I'm Nameet, a Class 12 student in Bengaluru. I build websites, web games and Python projects — and I learn by shipping real projects.
+          </p>
+          <div class="hero__ctas hero-in" style="--d:.5s">
+            <a href="#contact" class="btn btn--light"><span>Get in touch</span><span class="btn__chip" aria-hidden="true">↗</span></a>
+            <a href="#work" class="btn btn--line"><span>See my work</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spatial wall of real projects -->
+      <div class="stage hero-in" style="--d:.2s" aria-label="Shipped projects" role="group" data-stage>
+        <div class="ring-tilt" data-ring-tilt>
+        <div class="ring" data-ring>
+          <a class="screen" style="--i:0" href="/work/shadow-trail/" data-screen="0" aria-label="Shadow Trail case study"><img src="/images/shadow-trail-480.webp" srcset="/images/shadow-trail-480.webp 480w, /images/shadow-trail-960.webp 960w" sizes="(min-width: 860px) 25vw, 46vw" width="480" height="300" alt="Shadow Trail preview" fetchpriority="high" /><span class="screen__cap" aria-hidden="true">github.com/NBPkiller143/shadow-trail<span class="screen__go">Case study →</span></span></a>
+          <a class="screen" style="--i:1" href="/work/nature-unisex-salon/" data-screen="1" aria-label="Nature Unisex Salon case study"><img src="/images/nature-unisex-salon-480.webp" srcset="/images/nature-unisex-salon-480.webp 480w, /images/nature-unisex-salon-960.webp 960w" sizes="(min-width: 860px) 25vw, 46vw" width="480" height="300" alt="Nature Unisex Salon preview" /><span class="screen__cap" aria-hidden="true">github.com/NBPkiller143/Nature-Unisex-Salon<span class="screen__go">Case study →</span></span></a>
+        </div>
+        </div>
+        <div class="stage__floor" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero__stats hero-in" style="--d:.7s">
+        <dl class="stats">
+          <div><dt class="hud">Projects on GitHub</dt><dd><span data-count="2">2</span></dd></div>
+          <div><dt class="hud">Tools learned</dt><dd><span data-count="10">10</span>+</dd></div>
+          <div><dt class="hud">Languages spoken</dt><dd><span data-count="3">3</span></dd></div>
+        </dl>
+        <a href="#work" class="hero__scroll hud">Scroll to begin <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <!-- ============ CLIENT TICKER ============ -->
+    <section class="ticker" aria-label="Technologies and tools">
+      <p class="hud ticker__label container"><span class="hud__bracket">[</span> Built with real tools <span class="hud__bracket">]</span></p>
+      <button type="button" class="ticker__pause hud" data-ticker-pause aria-pressed="false">Pause</button>
+      <div class="ticker__track">
+        <ul class="ticker__list">
+          <li>Python</li><li>Flask</li><li>OpenCV</li><li>YOLO</li><li>ESP32</li><li>JavaScript</li><li>SQLite</li><li>Git</li><li>GitHub</li>
+        </ul>
+        <ul class="ticker__list" aria-hidden="true">
+          <li>Python</li><li>Flask</li><li>OpenCV</li><li>YOLO</li><li>ESP32</li><li>JavaScript</li><li>SQLite</li><li>Git</li><li>GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 01 · THE WORK ============ -->
+    <section class="chapter work" id="work" data-chapter="01" data-chapter-title="The work" data-mode="stack" data-work aria-labelledby="work-title">
+      <div class="container">
+        <header class="work__head">
+          <p class="chapter__label hud"><span class="hud__bracket">[</span> 01 <span class="hud__bracket">]</span> The work</p>
+          <h2 class="chapter__title" id="work-title" data-split>Real projects. Real code. <em>All on GitHub.</em></h2>
+        </header>
+      </div>
+
+      <div class="work-pin" data-work-pin>
+        <div class="container work-viewport" data-work-viewport>
+          <div class="work-list" data-work-list>
+            <!-- work:start -->
+            <article class="card" style="--i:0" data-card>
+              <div class="card__info">
+                <p class="card__meta"><b>01</b><span>Web game · Swachh Bharat</span><span>Bengaluru</span></p>
+                <h3>Shadow Trail: The Clean Path</h3>
+                <p class="card__line">A family-friendly adventure game built around the Swachh Bharat (Clean India) mission.</p>
+                <dl class="card__facts">
+                  <div><dt>Role</dt><dd>Developer</dd></div>
+                  <div><dt>Stack</dt><dd>HTML · CSS · JavaScript</dd></div>
+                </dl>
+                <div class="card__actions">
+                  <a class="card__cta" href="/work/shadow-trail/">Read the case study <span aria-hidden="true">→</span></a>
+                  <a class="card__live" href="https://github.com/NBPkiller143/shadow-trail" target="_blank" rel="noopener">Code ↗<span class="sr-only"> (opens in a new tab)</span></a>
+                </div>
+              </div>
+              <a class="shot" href="/work/shadow-trail/" tabindex="-1" aria-hidden="true" data-slug="shadow-trail" data-full="/images/cases/shadow-trail-full-1200" data-full-h="750">
+                <span class="shot__bar"><i></i><i></i><i></i><span>github.com/NBPkiller143/shadow-trail</span></span>
+                <span class="shot__media">
+              <picture>
+                <source type="image/avif" srcset="/images/shadow-trail-480.avif 480w, /images/shadow-trail-960.avif 960w, /images/shadow-trail-1440.avif 1440w, /images/shadow-trail-1920.avif 1920w" sizes="(min-width: 1360px) 700px, (min-width: 860px) 52vw, 90vw" />
+                <img src="/images/shadow-trail-960.webp" srcset="/images/shadow-trail-480.webp 480w, /images/shadow-trail-960.webp 960w, /images/shadow-trail-1440.webp 1440w, /images/shadow-trail-1920.webp 1920w" sizes="(min-width: 1360px) 700px, (min-width: 860px) 52vw, 90vw" alt="Shadow Trail: The Clean Path screenshot" loading="lazy" decoding="async" width="1440" height="900" data-shot />
+              </picture>
+                </span>
+              </a>
+            </article>
+            <article class="card" style="--i:1" data-card>
+              <div class="card__info">
+                <p class="card__meta"><b>02</b><span>Website · Local business</span><span>Bengaluru</span></p>
+                <h3>Nature Unisex Salon</h3>
+                <p class="card__line">A website project for a local unisex salon.</p>
+                <dl class="card__facts">
+                  <div><dt>Role</dt><dd>Developer</dd></div>
+                  <div><dt>Stack</dt><dd>Python</dd></div>
+                </dl>
+                <div class="card__actions">
+                  <a class="card__cta" href="/work/nature-unisex-salon/">Read the case study <span aria-hidden="true">→</span></a>
+                  <a class="card__live" href="https://github.com/NBPkiller143/Nature-Unisex-Salon" target="_blank" rel="noopener">Code ↗<span class="sr-only"> (opens in a new tab)</span></a>
+                </div>
+              </div>
+              <a class="shot" href="/work/nature-unisex-salon/" tabindex="-1" aria-hidden="true" data-slug="nature-unisex-salon" data-full="/images/cases/nature-unisex-salon-full-1200" data-full-h="750">
+                <span class="shot__bar"><i></i><i></i><i></i><span>github.com/NBPkiller143/Nature-Unisex-Salon</span></span>
+                <span class="shot__media">
+              <picture>
+                <source type="image/avif" srcset="/images/nature-unisex-salon-480.avif 480w, /images/nature-unisex-salon-960.avif 960w, /images/nature-unisex-salon-1440.avif 1440w, /images/nature-unisex-salon-1920.avif 1920w" sizes="(min-width: 1360px) 700px, (min-width: 860px) 52vw, 90vw" />
+                <img src="/images/nature-unisex-salon-960.webp" srcset="/images/nature-unisex-salon-480.webp 480w, /images/nature-unisex-salon-960.webp 960w, /images/nature-unisex-salon-1440.webp 1440w, /images/nature-unisex-salon-1920.webp 1920w" sizes="(min-width: 1360px) 700px, (min-width: 860px) 52vw, 90vw" alt="Nature Unisex Salon screenshot" loading="lazy" decoding="async" width="1440" height="900" data-shot />
+              </picture>
+                </span>
+              </a>
+            </article>
+
+
+
+
+
+
+
+
+
+
+            <!-- work:end -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 · THE PROBLEM ============ -->
+    <section class="chapter problem" id="problem" data-chapter="02" data-chapter-title="The problem" aria-labelledby="problem-label">
+      <div class="problem__pin" data-problem>
+        <div class="container">
+          <p class="chapter__label hud" id="problem-label"><span class="hud__bracket">[</span> 02 <span class="hud__bracket">]</span> The problem</p>
+          <p class="problem__text" data-fill>
+            Most student projects stop at the tutorial.
+          </p>
+          <div class="problem__foot">
+            <p class="problem__turn">I build things that are made for <span class="marked">real people</span> — a game that teaches cleanliness, and a website for a local business.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 · HOW I WORK ============ -->
+    <section class="chapter process" id="process" data-chapter="03" data-chapter-title="How I work" aria-labelledby="process-title">
+      <div class="process__pin" data-process>
+        <header class="container process__head">
+          <p class="chapter__label hud"><span class="hud__bracket">[</span> 03 <span class="hud__bracket">]</span> How I work</p>
+          <h2 class="chapter__title" id="process-title" data-split>Five steps from idea to <em>working system.</em></h2>
+          <p class="process__aside">No shortcuts. Every step has a clear output.</p>
+        </header>
+
+        <div class="process__viewport">
+          <ol class="process__track" data-process-track>
+            <li class="module">
+              <div class="module__top"><span class="hud">Step 01</span><span class="module__tag">Step 01</span></div>
+              <svg class="icon" viewBox="0 0 240 160" aria-hidden="true">
+                <path pathLength="1" d="M24 22 H 146 Q 158 22 158 34 V 74 Q 158 86 146 86 H 70 L 48 104 V 86 H 24 Q 12 86 12 74 V 34 Q 12 22 24 22 Z" />
+                <path pathLength="1" d="M32 46 H 136 M32 62 H 104" />
+                <path pathLength="1" d="M156 96 H 214 Q 226 96 226 108 V 128 Q 226 140 214 140 H 206 V 154 L 190 140 H 156 Q 144 140 144 128 V 108 Q 144 96 156 96 Z" />
+                <path pathLength="1" d="M160 118 H 208" />
+              </svg>
+              <h3>Understand</h3>
+              <p>I start with the real problem: who it's for, what goes wrong today, and what 'working' looks like.</p>
+              <p class="module__out"><span>Output</span> A clear problem statement</p>
+            </li>
+            <li class="module">
+              <div class="module__top"><span class="hud">Step 02</span><span class="module__tag">Step 02</span></div>
+              <svg class="icon" viewBox="0 0 240 160" aria-hidden="true">
+                <path pathLength="1" d="M14 14 H 226 V 148 H 14 Z" />
+                <path pathLength="1" d="M14 32 H 226" />
+                <path pathLength="1" d="M30 52 H 118 M30 66 H 98" />
+                <path pathLength="1" d="M30 82 H 74 V 98 H 30 Z" />
+                <path pathLength="1" d="M138 50 H 210 V 104 H 138 Z M138 50 L 210 104 M210 50 L 138 104" />
+                <path pathLength="1" d="M30 118 H 82 V 136 H 30 Z M94 118 H 146 V 136 H 94 Z M158 118 H 210 V 136 H 158 Z" />
+              </svg>
+              <h3>Plan</h3>
+              <p>I sketch the system — screens, data, hardware — before writing code.</p>
+              <p class="module__out"><span>Output</span> A simple blueprint</p>
+            </li>
+            <li class="module">
+              <div class="module__top"><span class="hud">Step 03</span><span class="module__tag">Step 03</span></div>
+              <svg class="icon" viewBox="0 0 240 160" aria-hidden="true">
+                <path pathLength="1" d="M78 42 L 40 80 L 78 118" />
+                <path pathLength="1" d="M162 42 L 200 80 L 162 118" />
+                <path pathLength="1" d="M136 30 L 104 130" />
+              </svg>
+              <h3>Build</h3>
+              <p>Hand-written code in Python, Flask and JavaScript, wired to real hardware when needed.</p>
+              <p class="module__out"><span>Output</span> A working prototype</p>
+            </li>
+            <li class="module">
+              <div class="module__top"><span class="hud">Step 04</span><span class="module__tag">Step 04</span></div>
+              <svg class="icon" viewBox="0 0 240 160" aria-hidden="true">
+                <path pathLength="1" d="M36 130 A 84 84 0 0 1 204 130" />
+                <path pathLength="1" d="M52 92 L 62 98 M88 62 L 94 72 M120 52 V 64 M152 62 L 146 72 M188 92 L 178 98" />
+                <path pathLength="1" d="M120 130 L 176 82" />
+                <path pathLength="1" d="M112 130 A 8 8 0 1 0 128 130 A 8 8 0 1 0 112 130" />
+              </svg>
+              <h3>Test</h3>
+              <p>I test it in real conditions, fix what breaks, and make it fast and reliable.</p>
+              <p class="module__out"><span>Output</span> A stable build</p>
+            </li>
+            <li class="module">
+              <div class="module__top"><span class="hud">Step 05</span><span class="module__tag">Step 05</span></div>
+              <svg class="icon" viewBox="0 0 240 160" aria-hidden="true">
+                <path pathLength="1" d="M120 20 C 150 44, 160 80, 150 116 H 90 C 80 80, 90 44, 120 20 Z" />
+                <path pathLength="1" d="M108 66 A 12 12 0 1 0 132 66 A 12 12 0 1 0 108 66" />
+                <path pathLength="1" d="M90 100 L 66 128 L 92 122 M150 100 L 174 128 L 148 122" />
+                <path pathLength="1" d="M106 128 L 120 154 L 134 128" />
+              </svg>
+              <h3>Improve</h3>
+              <p>Feedback, new features and documentation, all tracked on GitHub.</p>
+              <p class="module__out"><span>Output</span> A project that keeps getting better</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 · TOOLKIT (Three.js) ============ -->
+    <section class="chapter toolkit" id="toolkit" data-chapter="04" data-chapter-title="Toolkit" aria-labelledby="toolkit-title">
+      <div class="container toolkit__grid">
+        <div class="toolkit__panel">
+          <p class="chapter__label hud"><span class="hud__bracket">[</span> 04 <span class="hud__bracket">]</span> Toolkit</p>
+          <h2 class="chapter__title" id="toolkit-title" data-split>Tools I <em>work with.</em></h2>
+          <p class="chapter__sub">Pick a tool to see where I've used it.</p>
+
+          <div class="toolkit__detail" aria-live="polite" data-toolkit-detail>
+            <p class="hud">Selected</p>
+            <p class="toolkit__name" data-toolkit-name>Python</p>
+            <p class="toolkit__used" data-toolkit-count>Used in 1 project</p>
+            <ul class="toolkit__projects" data-toolkit-projects>
+              <li><a href="/work/nature-unisex-salon/">Nature Unisex Salon →</a></li>
+            </ul>
+          </div>
+
+          <div class="toolkit__chips" role="group" aria-label="Choose a tool" data-toolkit-chips></div>
+        </div>
+
+        <div class="toolkit__stage" data-toolkit>
+          <canvas class="toolkit__canvas" aria-hidden="true" data-toolkit-canvas></canvas>
+          <p class="hud toolkit__hint" aria-hidden="true">[ Hover or tap a tool · drag to rotate · built with Three.js ]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 · WHAT I DO ============ -->
+    <section class="chapter chapter--light pricing" id="pricing" data-chapter="05" data-chapter-title="What I do" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="pricing__head">
+          <p class="chapter__label hud"><span class="hud__bracket">[</span> 05 <span class="hud__bracket">]</span> What I do</p>
+          <h2 class="chapter__title" id="pricing-title" data-split>What I can <em>build with you.</em></h2>
+          <p class="chapter__sub" data-reveal>Projects, internships and collaborations. Clear scope, honest timelines.</p>
+        </header>
+
+        <div class="plans">
+          <article class="plan plan--pick" data-reveal>
+            <p class="plan__flag hud">Most picked</p>
+            <p class="hud">For people &amp; small businesses</p>
+            <h3>Websites</h3>
+            <p class="plan__desc">Clean, fast, mobile-friendly websites with HTML, CSS and JavaScript.</p>
+            <ul class="ticks">
+              <li>Custom design</li>
+              <li>Mobile-first</li>
+              <li>Basic SEO</li>
+              <li>Contact &amp; WhatsApp integration</li>
+            </ul>
+            <a href="https://wa.me/916360426243?text=Hi%20Nameet!%20I%20saw%20your%20website%20and%20would%20love%20to%20connect." target="_blank" rel="noopener" class="btn btn--accent btn--block"><span>Start a website ↗</span></a>
+          </article>
+
+          <article class="plan" data-reveal>
+            <p class="hud">For ideas</p>
+            <h3>AI &amp; computer vision</h3>
+            <p class="plan__desc">OpenCV &amp; YOLO computer vision, Python + Flask backends.</p>
+            <ul class="ticks">
+              <li>OpenCV &amp; YOLO computer vision</li>
+              <li>Python + Flask backends</li>
+            </ul>
+            <a href="#contact" class="btn btn--dark-line btn--block"><span>Talk about your idea</span></a>
+          </article>
+
+          <article class="plan" data-reveal>
+            <p class="hud">For makers</p>
+            <h3>IoT &amp; hardware</h3>
+            <p class="plan__desc">Connecting software to the real world with ESP32 and Arduino.</p>
+            <ul class="ticks">
+              <li>ESP32 / Arduino programming</li>
+              <li>Sensor &amp; device integration</li>
+              <li>Web control panels</li>
+              <li>Flask backends</li>
+            </ul>
+            <a href="#contact" class="btn btn--dark-line btn--block"><span>Build something together</span></a>
+          </article>
+        </div>
+
+        <ul class="promises" data-reveal>
+          <li>Clean, readable code</li>
+          <li>Everything on GitHub</li>
+          <li>Mobile-first</li>
+          <li>Documentation included</li>
+          <li>Direct line to me</li>
+        </ul>
+
+        <div class="container" style="margin-top: 32px; text-align: center;">
+          <p class="hud" style="color: var(--text-muted, #7d8b9e); font-size: 0.8125rem;">
+            2 Projects on GitHub · 10+ Tools learned · 3 Languages spoken · 1 Person you deal with: me
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 · ABOUT ============ -->
+    <section class="chapter note-section" id="note" data-chapter="06" data-chapter-title="About me" aria-labelledby="note-title">
+      <div class="container note-grid">
+        <div class="note-stats" data-reveal>
+          <div class="note-stat"><b>Class 12</b><span class="hud">CBSE Science (PCM + CS)</span></div>
+          <div class="note-stat"><b>Bengaluru</b><span class="hud">PM SHRI KV ASC Centre</span></div>
+          <div class="note-stat"><b>3</b><span class="hud">Languages: English, Hindi, Odia</span></div>
+          <div class="note-stat"><b>1</b><span class="hud">Person you deal with: me</span></div>
+        </div>
+
+        <article class="letter">
+          <p class="chapter__label hud"><span class="hud__bracket">[</span> 06 <span class="hud__bracket">]</span> About me</p>
+          <h2 class="letter__title" id="note-title" data-split>You talk to the person <em>writing the code.</em></h2>
+          <div class="letter__body" data-reveal>
+            <p>I'm a Class 12 student (CBSE, PCM + Computer Science) at PM SHRI Kendriya Vidyalaya ASC Centre, Bengaluru. I got into computers by building things, not just reading about them.</p>
+            <p>I like building things people can actually use — from a Swachh Bharat web game to a website for a local salon.</p>
+            <p>I'm aiming for Computer Science engineering, with a focus on artificial intelligence, software development, web development and IoT &amp; robotics.</p>
+            
+            <div style="margin-top: 24px;">
+              <p class="hud" style="margin-bottom: 8px;">Core Strengths:</p>
+              <p style="font-size: 0.9375rem; color: var(--text-muted, #a0aec0);">
+                Quick Learner · Problem Solving · Creative Thinking · Technical Troubleshooting · Team Collaboration · Project Development
+              </p>
+            </div>
+          </div>
+          <p class="letter__sign hud" data-reveal>— Nameet Kumar Behera · Bengaluru, India</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 07 · QUESTIONS ============ -->
+    <section class="chapter faq" id="faq" data-chapter="07" data-chapter-title="Questions" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <header>
+          <p class="chapter__label hud"><span class="hud__bracket">[</span> 07 <span class="hud__bracket">]</span> Questions</p>
+          <h2 class="chapter__title" id="faq-title" data-split>Things people <em>usually ask.</em></h2>
+          <p class="chapter__sub">Something else? <a class="link" href="#contact">Just ask me.</a></p>
+        </header>
+
+        <div class="faq__list" data-reveal>
+          <details class="faq__item" name="faq" open>
+            <summary>What technologies do you use?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer"><p>HTML, CSS and JavaScript for the web, Python and Flask for backends, and I've also worked with OpenCV, YOLO, ESP32 and Arduino.</p></div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Are you open to internships or collaborations?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer"><p>Yes, especially in AI, web development and IoT.</p></div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>What are you studying?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__answer"><p>Class 12 CBSE Science (PCM + Computer Science), aiming for Computer Science engineering.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08 · CONTACT ============ -->
+    <section class="chapter contact" id="contact" data-chapter="08" data-chapter-title="Contact" aria-labelledby="contact-title">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <p class="chapter__label hud"><span class="hud__bracket">[</span> 08 <span class="hud__bracket">]</span> Your turn</p>
+          <h2 class="contact__title" id="contact-title" data-split>Let's build your <em>next idea.</em></h2>
+          <p class="contact__lead" data-reveal>Tell me what you're working on. You'll hear back from me personally.</p>
+
+          <div class="contact__direct" data-reveal>
+            <a class="direct" href="https://wa.me/916360426243?text=Hi%20Nameet!%20I%20saw%20your%20website%20and%20would%20love%20to%20connect." target="_blank" rel="noopener">
+              <span class="direct__label hud">WhatsApp</span>
+              <span class="direct__value">+91 63604 26243</span><span class="sr-only"> (opens WhatsApp in a new tab)</span>
+              <span class="direct__arrow" aria-hidden="true">↗</span>
+            </a>
+            <button class="direct" type="button" data-copy="nameetbehera6@gmail.com">
+              <span class="direct__label hud" data-copy-label aria-live="polite">Copy email</span>
+              <span class="direct__value">nameetbehera6@gmail.com</span>
+              <span class="direct__arrow" aria-hidden="true">⧉</span>
+            </button>
+          </div>
+        </div>
+
+        <form class="form" data-contact-form novalidate data-reveal>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name">Your name <span class="field__req" aria-hidden="true">*</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="100" placeholder="Maya Sharma" aria-describedby="err-name" />
+              <p class="field__error" id="err-name" data-error-for="name"></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email <span class="field__req" aria-hidden="true">*</span></label>
+              <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="160" placeholder="maya@example.com" aria-describedby="err-email" />
+              <p class="field__error" id="err-email" data-error-for="email"></p>
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend>What do you need?</legend>
+            <div class="choices">
+              <label><input type="radio" name="type" value="Website" checked /><span>Website</span></label>
+              <label><input type="radio" name="type" value="AI project" /><span>AI project</span></label>
+              <label><input type="radio" name="type" value="IoT / Hardware" /><span>IoT / Hardware</span></label>
+              <label><input type="radio" name="type" value="Internship" /><span>Internship</span></label>
+              <label><input type="radio" name="type" value="Collaboration" /><span>Collaboration</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-message">Tell me about what you are building <span class="field__req" aria-hidden="true">*</span></label>
+            <textarea id="f-message" name="message" rows="4" required maxlength="4000" placeholder="Tell me what you are building or looking for..." aria-describedby="err-message"></textarea>
+            <p class="field__error" id="err-message" data-error-for="message"></p>
+          </div>
+
+          <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
+
+          <button type="submit" class="btn btn--accent btn--block" data-submit>
+            <span data-submit-label>Send message</span><span class="btn__chip" aria-hidden="true">↗</span>
+          </button>
+
+          <p class="form__note"><span aria-hidden="true">*</span> Required. I use your details only to reply to your message. See the <a href="/privacy/">privacy policy</a>.</p>
+
+          <div class="form__status" role="status" aria-live="polite" data-form-status></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="mcta" data-mcta>
+    <a class="btn btn--light mcta__main" href="#contact"><span>Get in touch</span><span class="btn__chip" aria-hidden="true">↗</span></a>
+    <a class="mcta__wa" href="https://wa.me/916360426243" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg><span class="sr-only">Chat on WhatsApp (opens in a new tab)</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="container" data-footer>
+      <div class="footer__top">
+        <p class="hud">[ End of story — for now ]</p>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="#work">Work</a>
+          <a href="#pricing">What I do</a>
+          <a href="#contact">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <button type="button" class="footer__cookie" data-cookie-settings>Cookie settings</button>
+          <a href="https://github.com/NBPkiller143" target="_blank" rel="noopener">GitHub ↗<span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="https://wa.me/916360426243" target="_blank" rel="noopener">WhatsApp ↗<span class="sr-only"> (opens in a new tab)</span></a>
+        </nav>
+      </div>
+      <p class="footer__word" aria-hidden="true">Nameet Behera</p>
+      <div class="footer__bottom hud">
+        <span>© <span data-year>2026</span> Nameet Kumar Behera · Designed &amp; developed in Bengaluru</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <!-- ld:start -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://nameet.runs-on.dev/#website",
+        "url": "https://nameet.runs-on.dev/",
+        "name": "Nameet Kumar Behera",
+        "description": "Nameet Kumar Behera is a student developer in Bengaluru building websites, web games and Python projects with HTML, CSS, JavaScript and Python.",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://nameet.runs-on.dev/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://nameet.runs-on.dev/#webpage",
+        "url": "https://nameet.runs-on.dev/",
+        "name": "Nameet Kumar Behera — Student Developer in Bengaluru | Web & Python",
+        "isPartOf": {
+          "@id": "https://nameet.runs-on.dev/#website"
+        },
+        "mainEntity": {
+          "@id": "https://nameet.runs-on.dev/#person"
+        },
+        "primaryImageOfPage": "https://nameet.runs-on.dev/images/og-image.jpg",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://nameet.runs-on.dev/#person",
+        "name": "Nameet Kumar Behera",
+        "givenName": "Nameet",
+        "familyName": "Kumar Behera",
+        "jobTitle": "Student Developer",
+        "description": "Nameet Kumar Behera is a student developer in Bengaluru building websites, web games and Python projects with HTML, CSS, JavaScript and Python.",
+        "url": "https://nameet.runs-on.dev/",
+        "image": "https://nameet.runs-on.dev/images/og-image.jpg",
+        "email": "mailto:nameetbehera6@gmail.com",
+        "telephone": "+91-6360426243",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Bengaluru, India"
+        },
+        "sameAs": [
+          "https://github.com/NBPkiller143"
+        ],
+        "knowsLanguage": [
+          "en",
+          "hi",
+          "or"
+        ],
+        "knowsAbout": [
+          "Python",
+          "Flask",
+          "OpenCV",
+          "YOLO",
+          "SQLite",
+          "ESP32",
+          "Arduino IDE",
+          "HTML / CSS",
+          "JavaScript",
+          "Git & GitHub",
+          "VS Code",
+          "Computer Vision",
+          "Machine Learning",
+          "Flask Backend APIs",
+          "ESP32 Robotics",
+          "Web Development",
+          "JavaScript",
+          "Python"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Student Developer",
+          "occupationLocation": {
+            "@type": "City",
+            "name": "Bengaluru"
+          },
+          "skills": "Python, Flask, OpenCV, YOLO, ESP32, JavaScript, HTML, CSS, SQLite, Git, Arduino IDE"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://nameet.runs-on.dev/#service",
+        "name": "Nameet Kumar Behera — Student Developer",
+        "url": "https://nameet.runs-on.dev/",
+        "description": "Nameet Kumar Behera is a student developer in Bengaluru building websites, web games and Python projects with HTML, CSS, JavaScript and Python.",
+        "image": "https://nameet.runs-on.dev/images/og-image.jpg",
+        "email": "nameetbehera6@gmail.com",
+        "telephone": "+91-6360426243",
+        "founder": {
+          "@id": "https://nameet.runs-on.dev/#person"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "areaServed": [
+          "Bengaluru",
+          "India",
+          "Worldwide"
+        ],
+        "knowsAbout": [
+          "Web Development",
+          "Python",
+          "Computer Vision",
+          "IoT Hardware",
+          "JavaScript"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services & Capabilities",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Websites",
+                "description": "Clean, fast, mobile-friendly websites with HTML, CSS and JavaScript. Custom design, mobile-first, basic SEO, contact & WhatsApp integration."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI & computer vision",
+                "description": "OpenCV & YOLO computer vision, Python + Flask backends."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "IoT & hardware",
+                "description": "ESP32 / Arduino programming, sensor & device integration, web control panels, Flask backends."
+              }
+            }
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "general inquiry",
+          "email": "nameetbehera6@gmail.com",
+          "telephone": "+91-6360426243",
+          "availableLanguage": [
+            "English",
+            "Hindi",
+            "Odia"
+          ],
+          "url": "https://nameet.runs-on.dev/#contact"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://nameet.runs-on.dev/#work",
+        "name": "Case studies",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://nameet.runs-on.dev/work/shadow-trail/",
+            "name": "Shadow Trail: The Clean Path — Web game · Swachh Bharat"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://nameet.runs-on.dev/work/nature-unisex-salon/",
+            "name": "Nature Unisex Salon — Website · Local business"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nameet.runs-on.dev/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What technologies do you use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HTML, CSS and JavaScript for the web, Python and Flask for backends, and I've also worked with OpenCV, YOLO, ESP32 and Arduino."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are you open to internships or collaborations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, especially in AI, web development and IoT."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are you studying?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Class 12 CBSE Science (PCM + Computer Science), aiming for Computer Science engineering."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- ld:end -->
+</body>
+</html>

@@ -1,0 +1,32 @@
+# Nameet Kumar Behera — Student Developer (Bengaluru, India)
+
+> Nameet Kumar Behera is a student developer in Bengaluru building websites, web games and Python projects with HTML, CSS, JavaScript and Python.
+
+Key facts:
+- Name: Nameet Kumar Behera · Role: Student Developer · Based in Bengaluru, India (IST, UTC+5:30)
+- Education: Class 12 (CBSE, PCM + Computer Science) at PM SHRI Kendriya Vidyalaya ASC Centre, Bengaluru
+- Core focus: websites, web games, Python development, computer vision, IoT hardware
+- Stack: Python, Flask, OpenCV, YOLO, ESP32, JavaScript, HTML, CSS, SQLite, Git, Arduino IDE
+- Contact: nameetbehera6@gmail.com · WhatsApp https://wa.me/916360426243 · https://nameet.runs-on.dev/#contact
+
+## Capabilities & Projects
+
+- **Websites**: Clean, fast, mobile-friendly websites with HTML, CSS and JavaScript. Custom design, mobile-first, basic SEO, contact & WhatsApp integration.
+- **AI & computer vision**: OpenCV & YOLO computer vision, Python + Flask backends.
+- **IoT & hardware**: ESP32 / Arduino programming, sensor & device integration, web control panels, Flask backends.
+
+## Case studies
+
+- [Shadow Trail: The Clean Path](https://nameet.runs-on.dev/work/shadow-trail/): A family-friendly adventure game built around the Swachh Bharat (Clean India) mission. (Web game · Swachh Bharat; HTML, CSS, JavaScript)
+- [Nature Unisex Salon](https://nameet.runs-on.dev/work/nature-unisex-salon/): A website project for a local unisex salon. (Website · Local business; Python)
+
+## Pages
+
+- [Home](https://nameet.runs-on.dev/): portfolio — process, work, toolkit, what I do, about, FAQ and contact
+- [Contact](https://nameet.runs-on.dev/#contact): contact form, WhatsApp and email
+- [Privacy policy](https://nameet.runs-on.dev/privacy/): how personal information is handled
+
+## Optional
+
+- [Full case-study text](https://nameet.runs-on.dev/llms-full.txt): case studies in plain text
+- [Sitemap](https://nameet.runs-on.dev/sitemap.xml)

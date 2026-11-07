@@ -1,0 +1,85 @@
+# Nameet Kumar Behera — Student Developer (Bengaluru, India)
+
+> Nameet Kumar Behera is a student developer in Bengaluru building websites, web games and Python projects with HTML, CSS, JavaScript and Python.
+
+Key facts:
+- Name: Nameet Kumar Behera · Role: Student Developer · Based in Bengaluru, India (IST, UTC+5:30)
+- Education: Class 12 (CBSE, PCM + Computer Science) at PM SHRI Kendriya Vidyalaya ASC Centre, Bengaluru
+- Core focus: websites, web games, Python development, computer vision, IoT hardware
+- Stack: Python, Flask, OpenCV, YOLO, ESP32, JavaScript, HTML, CSS, SQLite, Git, Arduino IDE
+- Contact: nameetbehera6@gmail.com · WhatsApp https://wa.me/916360426243 · https://nameet.runs-on.dev/#contact
+
+## Capabilities & Projects
+
+- **Websites**: Clean, fast, mobile-friendly websites with HTML, CSS and JavaScript. Custom design, mobile-first, basic SEO, contact & WhatsApp integration.
+- **AI & computer vision**: OpenCV & YOLO computer vision, Python + Flask backends.
+- **IoT & hardware**: ESP32 / Arduino programming, sensor & device integration, web control panels, Flask backends.
+
+## Case studies
+
+- [Shadow Trail: The Clean Path](https://nameet.runs-on.dev/work/shadow-trail/): A family-friendly adventure game built around the Swachh Bharat (Clean India) mission. (Web game · Swachh Bharat; HTML, CSS, JavaScript)
+- [Nature Unisex Salon](https://nameet.runs-on.dev/work/nature-unisex-salon/): A website project for a local unisex salon. (Website · Local business; Python)
+
+## Pages
+
+- [Home](https://nameet.runs-on.dev/): portfolio — process, work, toolkit, what I do, about, FAQ and contact
+- [Contact](https://nameet.runs-on.dev/#contact): contact form, WhatsApp and email
+- [Privacy policy](https://nameet.runs-on.dev/privacy/): how personal information is handled
+
+## Optional
+
+- [Full case-study text](https://nameet.runs-on.dev/llms-full.txt): case studies in plain text
+- [Sitemap](https://nameet.runs-on.dev/sitemap.xml)
+
+---
+
+# Case studies (full text)
+
+## Shadow Trail: The Clean Path — Web game · Swachh Bharat (Bengaluru)
+
+URL: https://nameet.runs-on.dev/work/shadow-trail/
+Code: https://github.com/NBPkiller143/shadow-trail
+Role: Developer
+Stack: HTML, CSS, JavaScript
+
+A family-friendly adventure game built around the Swachh Bharat (Clean India) mission.
+
+### Context
+
+Shadow Trail: The Clean Path is a family-friendly adventure game built around the Swachh Bharat (Clean India) mission, made with HTML, CSS and JavaScript.
+
+### Delivered
+
+Family-friendly adventure web game · Built with HTML, CSS and JavaScript · Source code on GitHub
+
+---
+
+## Nature Unisex Salon — Website · Local business (Bengaluru)
+
+URL: https://nameet.runs-on.dev/work/nature-unisex-salon/
+Code: https://github.com/NBPkiller143/Nature-Unisex-Salon
+Role: Developer
+Stack: Python
+
+A website project for a local unisex salon.
+
+### Context
+
+Nature Unisex Salon is a website project for a local unisex salon, built with Python.
+
+### Delivered
+
+Website project for a local salon · Built with Python · Source code on GitHub
+
+---
+
+# Frequently asked questions
+
+**What technologies do you use?**
+HTML, CSS and JavaScript for the web, Python and Flask for backends, and I've also worked with OpenCV, YOLO, ESP32 and Arduino.
+
+**Are you open to internships or collaborations?**
+Yes, especially in AI, web development and IoT.
+
+**What are you studying?**
+Class 12 CBSE Science (PCM + Computer Science), aiming for Computer Science engineering.
